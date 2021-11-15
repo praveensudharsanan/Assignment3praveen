@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class ImageManager {
+    
+    public var listOfImages = [Imageinfo]()
+    
+    func addNewImages(ns:Imageinfo){
+        listOfImages.append(ns)
+    }
+    
+    func getAllImages() -> [Imageinfo]{
+        return listOfImages
+    }
+    
+}
